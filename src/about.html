@@ -1,0 +1,18 @@
+<template>
+  <require from="aurelia-kendoui-bridge/dropdownlist/dropdownlist"></require>
+
+  <h5>This is the about page</h5>
+  <p>Try to use the router back to the home page with the link below, if you get a white screen, it is broke</p>
+  <div>
+    <a route-href="route.bind: 'home';">Home</a>
+  </div>
+
+  <ak-drop-down-list>
+    <select style="width: 100%;">
+      <option>S - 6 3/4"</option>
+      <option>M - 7 1/4"</option>
+      <option>L - 7 1/8"</option>
+      <option>XL - 7 5/8"</option>
+    </select>
+  </ak-drop-down-list>
+</template>
