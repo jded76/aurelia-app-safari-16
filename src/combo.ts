@@ -1,5 +1,4 @@
-export class About {
-
+export class ComboCustomElement {
   testak: any;
   testDiv: any;
 

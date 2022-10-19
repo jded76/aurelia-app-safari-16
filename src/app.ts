@@ -22,7 +22,7 @@ export class App {
   }
 
   public configureRouter(config: RouterConfiguration, router: Router) {
-    config.title = "Test";
+    config.title = "Test1";
     config.options.root = "/";
     config.options.pushState = true;
     config.map([
@@ -41,6 +41,14 @@ export class App {
         nav: false,
         auth: false,
         title: "about",
+      },
+      {
+        route: ["test"],
+        name: "test",
+        moduleId: PLATFORM.moduleName("./test"),
+        nav: false,
+        auth: false,
+        title: "test",
       },
     ]);
     this.router = router;

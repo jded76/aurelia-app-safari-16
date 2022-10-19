@@ -1,0 +1,12 @@
+<template>
+  <require from='combo'></require>
+  <h5>This is the test components page</h5>
+
+  <div>
+    <a route-href="route.bind: 'home';">Home</a>
+  </div>
+
+  <button click.trigger="toggleVisible()">Click To Toggle</button>
+  <combo if.bind="isComboVisible">
+  </combo>
+</template>
